@@ -5,21 +5,18 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Faytzel",
+            "name" : "Faytzel",
             "email": "jmgomez0101@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.3.0",
-        "illuminate/support": "~4",
-        "illuminate/config": "~4",
-        "illuminate/encrypter": "~4",
-        "illuminate/translation": "~4"
+        "php"                   : ">=5.3.0",
+        "illuminate/support"    : "4.1.*",
+        "illuminate/config"     : "4.1.*",
+        "illuminate/encryption" : "4.1.*",
+        "illuminate/translation": "4.1.*"
     },
     "autoload": {
-        "classmap": [
-            "src/migrations"
-        ],
         "psr-0": {
             "Faytzel\\LaravelLatch\\": "src/"
         }
