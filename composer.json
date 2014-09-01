@@ -14,7 +14,8 @@
         "illuminate/support"    : "4.*",
         "illuminate/config"     : "4.*",
         "illuminate/encryption" : "4.*",
-        "illuminate/translation": "4.*"
+        "illuminate/translation": "4.*",
+        "faytzel/latch-sdk-php" : "dev-master@dev"
     },
     "autoload": {
         "psr-0": {
