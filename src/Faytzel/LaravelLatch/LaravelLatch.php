@@ -1,6 +1,6 @@
 <?php namespace Faytzel\LaravelLatch;
 
-use Faytzel\LaravelLatch\Api\Latch;
+use ElevenPaths\Latch\Latch;
 
 class LaravelLatch {
 

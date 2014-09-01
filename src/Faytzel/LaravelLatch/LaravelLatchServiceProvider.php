@@ -1,7 +1,7 @@
 <?php namespace Faytzel\LaravelLatch;
 
 use Illuminate\Support\ServiceProvider;
-use Faytzel\LaravelLatch\Api\Latch;
+use ElevenPaths\Latch\Latch;
 
 class LaravelLatchServiceProvider extends ServiceProvider {
 
