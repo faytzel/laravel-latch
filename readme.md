@@ -1,6 +1,26 @@
-## Laravel Latch Integration (Alpha version)
+## Laravel (4 and 5) Latch Integration
 
 ## Installation
+
+### Laravel 5
+
+Require this package in your composer.json and run composer update:
+
+    "faytzel/laravel-latch": "1.*"
+
+After updating composer, add the Service Provider to the providers array in config/app.php
+
+    'Faytzel\LaravelLatch\LaravelLatchServiceProvider',
+
+You add config files.
+
+    php artisan vendor:publish
+
+If you want to use the facade, add this to your facades in config/app.php
+
+    'Latch' => 'Faytzel\LaravelLatch\Facades\LaravelLatch',
+
+### Laravel 4
 
 Require this package in your composer.json and run composer update:
 
@@ -12,11 +32,12 @@ After updating composer, add the Service Provider to the providers array in app/
 
 You add config files.
 
-    $ php artisan config:publish faytzel/laravel-latch
+    php artisan config:publish faytzel/laravel-latch
 
 If you want to use the facade, add this to your facades in app/config/app.php
 
     'Latch' => 'Faytzel\LaravelLatch\Facades\LaravelLatch',
+
 
 ## Examples
 
