@@ -19,7 +19,13 @@ class LaravelLatchServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('faytzel/laravel-latch');
+        // load langs
+        $this->loadTranslationsFrom(__DIR__.'/../../lang/', 'laravel-latch');
+
+        // load configs
+        $this->publishes([
+            __DIR__.'/../../config/latch.php' => config_path('latch.php'),
+        ]);
     }
 
     /**
@@ -31,7 +37,7 @@ class LaravelLatchServiceProvider extends ServiceProvider {
     {
         $this->app['latch'] = $this->app->share(function($app)
         {
-            $config = $this->app['config']->get('laravel-latch::latch');
+            $config = $this->app['config']->get('latch');
 
             return new LaravelLatch(
                 new Latch($config['app_id'], $config['app_secret']),

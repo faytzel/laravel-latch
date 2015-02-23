@@ -35,7 +35,7 @@ class LaravelLatch {
     public function locked($accountId, $encrypt = true)
     {
         $this->reset();
-        
+
         // if not define accountId, return false
         if (is_null($accountId)) return false;
 
