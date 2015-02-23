@@ -37,7 +37,7 @@ class LaravelLatchServiceProvider extends ServiceProvider {
     {
         $this->app['latch'] = $this->app->share(function($app)
         {
-            $config = config('latch');
+            $config = $this->app['config']->get('latch');
 
             return new LaravelLatch(
                 new Latch($config['app_id'], $config['app_secret']),
